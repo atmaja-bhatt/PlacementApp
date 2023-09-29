@@ -123,12 +123,19 @@ class SignupPage extends State<Signup> {
                       ]),
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("Already have an account"),
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, MyRoutes.signupRoute);
+                          },
+                          child: const Text(
+                            "Log in",
+                          ))
+                    ],
+                  )
                 ],
               ),
             ),
