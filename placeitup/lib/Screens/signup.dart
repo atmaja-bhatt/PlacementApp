@@ -42,7 +42,7 @@ class SignupPage extends State<Signup> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    height: 350.0,
+                    height: 250.0,
                     width: 300.0,
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
@@ -57,7 +57,7 @@ class SignupPage extends State<Signup> {
                       margin: const EdgeInsets.only(left: 35, right: 35),
                       child: Column(children: [
                         TextFormField(
-                          keyboardType: TextInputType.emailAddress,
+                          keyboardType: TextInputType.text,
                           style: const TextStyle(color: Colors.black),
                           decoration: InputDecoration(
                               fillColor: Colors.grey.shade100,
@@ -102,9 +102,6 @@ class SignupPage extends State<Signup> {
                         const SizedBox(
                           height: 30,
                         ),
-                        const SizedBox(
-                          height: 30,
-                        ),
                         SizedBox(
                             height: 50,
                             width: 200,
@@ -129,7 +126,7 @@ class SignupPage extends State<Signup> {
                       const Text("Already have an account"),
                       TextButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, MyRoutes.signupRoute);
+                            Navigator.pushNamed(context, MyRoutes.loginRoute);
                           },
                           child: const Text(
                             "Log in",

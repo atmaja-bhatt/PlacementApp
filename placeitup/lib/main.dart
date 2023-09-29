@@ -25,6 +25,7 @@ class Placeitup extends StatelessWidget {
         "/": (context) => const MyLogin(),
         MyRoutes.homeRoute: (context) => const Home(),
         MyRoutes.signupRoute: (context) => const Signup(),
+        MyRoutes.loginRoute: (context) => const MyLogin(),
       },
       debugShowCheckedModeBanner: false,
     );

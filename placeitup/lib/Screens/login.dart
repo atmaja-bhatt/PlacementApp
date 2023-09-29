@@ -44,7 +44,7 @@ class LoginPage extends State<MyLogin> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    height: 350.0,
+                    height: 250.0,
                     width: 300.0,
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
